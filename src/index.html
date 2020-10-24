@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt_BR" id="doc">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="../public/css/main.css" />
+    <link rel="stylesheet" href="../public/css/mobile.css" />
+    <link rel="stylesheet" href="../public/css/form.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="main">
+    <div class="container">
+      <header>
+        <h1 id="title">Social Media Usage | Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us</p>
+      </header>
+
+      <form id="survey-form" class="form">
+        <div class="form-group">
+          <label for="name" id="name-label" class="question">Name</label>
+          <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label" class="question">Email</label
+          ><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age" id="number-label" class="question"
+            >Age <span class="clue">(optional)</span></label
+          ><br />
+          <input
+            type="number"
+            id="number"
+            min="10"
+            max="99"
+            name="age"
+            class="form-input"
+            placeholder="Enter your age"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="role" class="question"
+            >Which option best describes your current role?</label
+          ><br />
+          <select id="dropdown" name="role" required>
+            <option disabled selected value>Select current role</option>
+            <option value="job">Full time job</option>
+            <option value="learned">Full time learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <legend class="question">
+            How much time do you spend on social media per day?
+          </legend>
+          <input
+            id="one"
+            class="input-radio"
+            type="radio"
+            name="items"
+            value="one"
+          /><label for="one"> Less than 30 minutes</label><br />
+          <input
+            id="two"
+            class="input-radio"
+            type="radio"
+            name="items"
+            value="two"
+          /><label for="two"> 30-60 minutes</label><br />
+          <input
+            id="three"
+            class="input-radio"
+            type="radio"
+            name="items"
+            value="three"
+          /><label for="three"> 1-2 hours</label><br />
+          <input
+            id="four"
+            class="input-radio"
+            type="radio"
+            name="items"
+            value="four"
+          /><label for="four"> 2-3 hours</label><br />
+          <input
+            id="five"
+            class="input-radio"
+            type="radio"
+            name="items"
+            value="five"
+          /><label for="five"> 3 hours or more</label><br />
+        </div>
+
+        <div class="form-group">
+          <legend class="question">
+            Which one do you use?
+            <span class="clue">(Check all that apply)</span>
+          </legend>
+          <input
+            id="whatsapp"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="whatsapp"
+          /><label for="whatsapp"> WhatsApp</label><br />
+          <input
+            id="facebook"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="facebook"
+          /><label for="facebook"> Facebook</label><br />
+          <input
+            id="instagram"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="instagram"
+          /><label for="instagram"> Instagram</label><br />
+          <input
+            id="twitter"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="twitter"
+          /><label for="twitter"> Twitter</label><br />
+          <input
+            id="linkedin"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="linkedin"
+          /><label for="linkedin"> LinkedIn</label><br />
+          <input
+            id="youtube"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="youtube"
+          /><label for="youtube"> Youtube</label><br />
+          <input
+            id="pinterest"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="pinterest"
+          /><label for="pinterest"> Piterest</label><br />
+          <input
+            id="tumblr"
+            class="input-checkbox"
+            type="checkbox"
+            name="subjects"
+            value="tumblr"
+          /><label for="tumblr"> Tumblr</label><br />
+        </div>
+
+        <div class="form-group">
+          <label for="comment" id="comment-label" class="question"
+            >What is the main reason why you use social media?</label
+          ><br />
+          <textarea
+            type="text"
+            id="comment"
+            name="comment"
+            class="form-comment"
+          >
+Enter your text here
+    </textarea
+          >
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
